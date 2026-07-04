@@ -1,0 +1,21 @@
+# Ignorar los checkpoints intermedios pesados
+*_checkpoint_*.pt
+
+# Ignorar todos los archivos PDF del proyecto
+*.pdf
+
+# Ignorar metadatos temporales de Windows/WSL
+*:Zone.Identifier
+
+# Ocultos de VS Code y Jupyter
+.vscode/
+.ipynb_checkpoints/
+
+videos/
+
+Proyecto_G9_SpaceInvaders_plantilla.ipynb
+"Proyecto_pr\303\241ctico.ipynb"
+Proyecto_práctico.ipynb
+
+# Ignorar el HTML generado
+Proyecto_G9_SpaceInvaders_pytorch_v0.html
