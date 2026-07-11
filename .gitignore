@@ -1,21 +1,33 @@
-# Ignorar los checkpoints intermedios pesados
-*_checkpoint_*.pt
+/*
 
-# Ignorar todos los archivos PDF del proyecto
-*.pdf
+!/.gitignore
+!/Proyecto_G9_SpaceInvaders_pipeline_mejorado.ipynb
 
-# Ignorar metadatos temporales de Windows/WSL
-*:Zone.Identifier
+# Gráficas
+!/grafica1_curva_aprendizaje.png
+!/grafica2_loss.png
+!/grafica3_test_boxplot.png
+!/grafica4_boxplot_final.png
 
-# Ocultos de VS Code y Jupyter
-.vscode/
-.ipynb_checkpoints/
+# Pesos del pipeline (el mejor es dqn_double_nstep_pipe.pt)
+!/dqn_baseline_pipe.pt
+!/dqn_double_pipe.pt
+!/dqn_dueling_pipe.pt
+!/dqn_double3m_pipe.pt
+!/dqn_double_nstep_pipe.pt
 
-videos/
+# Resultados y logs (para reproducir gráficas y tests sin reentrenar)
+!/results_baseline_pipe.json
+!/results_double_pipe.json
+!/results_dueling_pipe.json
+!/results_double3m_pipe.json
+!/baseline_pipe_log.json
+!/double_pipe_log.json
+!/dueling_pipe_log.json
+!/double3m_pipe_log.json
+!/double_nstep_pipe_log.json
 
-Proyecto_G9_SpaceInvaders_plantilla.ipynb
-"Proyecto_pr\303\241ctico.ipynb"
-Proyecto_práctico.ipynb
-
-# Ignorar el HTML generado
-Proyecto_G9_SpaceInvaders_pytorch.html
+# Carpeta de vídeo: solo el episodio de 30
+!/video_agent/
+/video_agent/*
+!/video_agent/rl-video-episode-30clip.mp4
